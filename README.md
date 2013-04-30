@@ -1,6 +1,4 @@
   <h2>Much easier to create a html page if you see a design on the background</h2>
-
-	<text class="text">
 	<p> <span class="count">1.</span> Click and copy the code, and put in tags '&lt;head&gt;' on your site.</p>
 	<p> <span class="count">2.</span> Load your pp-bg.jpg/png in any domain foldes. /images/ </p>
 	<p> <span class="count">3.</span> Select folder name and extension in dialog. /wp-cotent/theme/any/images/ - .jpg</p>
