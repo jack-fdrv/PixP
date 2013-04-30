@@ -1,6 +1,5 @@
-
   <h2>Much easier to create a html page if you see a design on the background</h2>
-	<input class="link" value='&lt;script src="http://jek-fdrv.16mb.com/pixp.js" type="text/javascript"&gt;&lt;/script&gt;'>
+
 	<text class="text">
 	<p> <span class="count">1.</span> Click and copy the code, and put in tags '&lt;head&gt;' on your site.</p>
 	<p> <span class="count">2.</span> Load your pp-bg.jpg/png in any domain foldes. /images/ </p>
