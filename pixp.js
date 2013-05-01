@@ -15,7 +15,7 @@ $.getScript("http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js
 	var msgE="I cant found pp-bg,please select new patch or url.";
 	var msgJ="Invalid url.";
 	function Pltgs() {$('#pp-load').show();}
-	function Pltgh() {$('#pp-load').hide();}
+	function Pltgh() {$('#pp-load').hide();} 
 	function Pdtgs() {$('#pp-dialog').show();}
 	function Pdtgh() {$('#pp-dialog').hide();}
 	var dh = $(document).height();
