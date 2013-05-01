@@ -1,5 +1,5 @@
 var jqueryIs = function () {
-    if (typeof jQuery != "undefined") {
+    if (typeof jQuery != "undefined") { 
 (function($){
 $.noConflict();
 $(function() {
