@@ -5,7 +5,7 @@ $.noConflict();
 $(function() {
 $('body').before('<div id="pp-load" style="opacity:0.7;z-index: 9999999; width:100%; position: absolute; top:0; left:0; display:block;"><div style="text-align: center;"><img src="https://raw.github.com/jek-fdrv/PixP/master/ajax-loader.gif"></div></div>');
 $.getScript("https://raw.github.com/jek-fdrv/PixP/master/jquery-cookie.js", function() {
-$.getScript("https://raw.github.com/jek-fdrv/PixP/master/jquery-ui.js", function() {
+$.getScript("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js", function() {
 $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function() {	
 	if ($.cookie('display')) {var Cdisplay = $.cookie('display');} else {var Cdisplay = 'block';}
 	if ($.cookie('top')) {var Ctop = $.cookie('top');} else {var Ctop = 0;}
@@ -106,7 +106,7 @@ $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function()
 })(jQuery);
     } else {
 		var script = document.createElement('script');
-		script.src = 'https://raw.github.com/jek-fdrv/PixP/master/jquery.min.js';
+		script.src = '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js';
 		script.type = 'text/javascript';
 		document.getElementsByTagName('head')[0].appendChild(script);
         window.setTimeout(waitForLoad, 1000);
