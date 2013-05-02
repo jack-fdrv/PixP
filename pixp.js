@@ -15,7 +15,6 @@ $.getScript("http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js
 	if (!$.cookie('PreOpacity')) {$.cookie('PreOpacity',0.4)}	
 	var msg="Please type the url or patch where u store 'pp-bg.jpg/png'";
 	var msgE="I cant found pp-bg,please select new patch or url.";
-	var msgJ="Invalid url.";
 	function Pltgs() {$('#pp-load').show();}
 	function Pltgh() {$('#pp-load').hide();} 
 	function Pdtgs() {$('#pp-dialog').show();}
