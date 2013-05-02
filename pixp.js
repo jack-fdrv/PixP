@@ -58,8 +58,7 @@ $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function()
 			$('body').before('<div class="pp-bg" style="opacity:0;height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:'+Cdisplay+';"><div style="text-align: center;"><img style="position:relative; z-index: 99999999; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'"></div></div>');
 			$.cookie('Cpatch', url);
 			$('.pp-bg img').load(function() {Pltgh();Pdtgh();$('.pp-bg').animate({opacity: Copacity,},100);});				
-			$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});			
-			//$('.pp-bg').hover(function() {$(this).hide();}, function() {$(this).show();});
+			$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
 		}		
 	}	
 	function toggleLayot(l){
