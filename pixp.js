@@ -21,7 +21,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 	function Pdtgs() {$('#pp-dialog').show();}
 	function Pdtgh() {$('#pp-dialog').hide();}
 	var dh = $(document).height();
-	if ($.cookie('Cpatch')) {showImg($.cookie('Cpatch'));} else { ppDialog(msg);}
+	if ($.cookie('Cpatch')) {imgCheck($.cookie('Cpatch'));} else { ppDialog(msg);}
 	function ppDialog(msg) {
 		if ($('#pp-dialog').length > 0) { 
 			Pltgh();$('#pp-dialog p').html(msg);$('#pp-dialog #pp-nf').text($.cookie('NF'));$.cookie('NF','');$('#pp-dialog').toggle("slide", { direction: "up" }, 100);
