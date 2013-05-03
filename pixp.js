@@ -1,9 +1,9 @@
-var jqueryIs = function waitJQ() {
+//Version 1.01
+var jqueryIs = function () {
     if (typeof jQuery != "undefined") {
 (function($){
 $.noConflict();
 $(function() {
-$.ajaxSetup({cache: true});
 $('body').before('<div id="pp-load" style="opacity:0.7;z-index: 9999999; width:100%; position: absolute; top:0; left:0; display:block;"><div style="text-align: center;"><img src="https://raw.github.com/jek-fdrv/PixP/master/ajax-loader.gif"></div></div>');
 $.getScript("https://raw.github.com/jek-fdrv/PixP/master/jquery-cookie.js", function() {
 $.getScript("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js", function() {
@@ -21,7 +21,7 @@ $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function()
 	function Pdtgs() {$('#pp-dialog').show();}
 	function Pdtgh() {$('#pp-dialog').hide();}
 	var dh = $(document).height();
-	if ($.cookie('Cpatch')) {showImg($.cookie('Cpatch'));} else { ppDialog(msg);}
+	if ($.cookie('Cpatch')) {imgCheck($.cookie('Cpatch'));} else { ppDialog(msg);}
 	function ppDialog(msg) {
 		if ($('#pp-dialog').length > 0) { 
 			Pltgh();$('#pp-dialog p').html(msg);$('#pp-dialog #pp-nf').text($.cookie('NF'));$.cookie('NF','');$('#pp-dialog').toggle("slide", { direction: "up" }, 100);
@@ -39,7 +39,7 @@ $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function()
 	function ppDialogL(l) {var msg ='Layot '+l+' not exists. pp-bg'+l+'.jpg/png';ppDialog(msg);Pltgh();}
 	function imgCheck(Cpatch) {
 		Pltgs();Pdtgh();
-		$.ajax({url: Cpatch,type:'HEAD',cache:true,
+		$.ajax({url: Cpatch,type:'HEAD',
 		error: function(){$.cookie('NF',Cpatch);ppDialog(msgE);},
 		success: function(){showImg(Cpatch);}});
 	}
@@ -110,7 +110,7 @@ $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function()
 		script.src = '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js';
 		script.type = 'text/javascript';
 		document.getElementsByTagName('head')[0].appendChild(script);
-        window.setTimeout(waitJQ, 1000);
+        window.setTimeout(waitForLoad, 1000);
     }
 };
 jqueryIs();
