@@ -1,8 +1,9 @@
-var jqueryIs = function () {
+var jqueryIs = function waitJQ() {
     if (typeof jQuery != "undefined") {
 (function($){
 $.noConflict();
 $(function() {
+$.ajaxSetup({cache: true});
 $('body').before('<div id="pp-load" style="opacity:0.7;z-index: 9999999; width:100%; position: absolute; top:0; left:0; display:block;"><div style="text-align: center;"><img src="https://raw.github.com/jek-fdrv/PixP/master/ajax-loader.gif"></div></div>');
 $.getScript("https://raw.github.com/jek-fdrv/PixP/master/jquery-cookie.js", function() {
 $.getScript("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js", function() {
@@ -109,7 +110,7 @@ $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function()
 		script.src = '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js';
 		script.type = 'text/javascript';
 		document.getElementsByTagName('head')[0].appendChild(script);
-        window.setTimeout(waitForLoad, 1000);
+        window.setTimeout(waitJQ, 1000);
     }
 };
 jqueryIs();
