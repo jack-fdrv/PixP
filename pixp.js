@@ -39,7 +39,7 @@ $.getScript("https://raw.github.com/jek-fdrv/PixP/master/hotkeys.js", function()
 	function ppDialogL(l) {var msg ='Layot '+l+' not exists. pp-bg'+l+'.jpg/png';ppDialog(msg);Pltgh();}
 	function imgCheck(Cpatch) {
 		Pltgs();Pdtgh();
-		$.ajax({url: Cpatch,type:'HEAD',
+		$.ajax({url: Cpatch,type:'HEAD',cache:true,
 		error: function(){$.cookie('NF',Cpatch);ppDialog(msgE);},
 		success: function(){showImg(Cpatch);}});
 	}
