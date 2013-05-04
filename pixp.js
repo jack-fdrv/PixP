@@ -50,12 +50,12 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 			}});
 		} else {
 			$('body').before('<div class="pp-bg" style="opacity:'+Copacity+';height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:'+Cdisplay+';"><div style="text-align: center;"><img style="position:relative; z-index: 99999999; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'"></div></div>');
-			$('.pp-bg img').fadeOut(1);$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
+			$('.pp-bg').fadeOut(1);$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
 			$('.pp-bg img').load(url, function(response, status, xhr) {
 			if (status == "error") {
 				$.cookie('NF',url);ppDialog(msgE);
 			} else {
-				Pltgh();Pdtgh();$('.pp-bg img').fadeIn(400);$.cookie('Cpatch', url);
+				Pltgh();Pdtgh();$('.pp-bg').fadeIn(400);$.cookie('Cpatch', url);
 			}});}		
 	}
 	function toggleLayot(l){
