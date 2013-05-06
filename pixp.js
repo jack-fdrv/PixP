@@ -26,7 +26,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 		if ($('#pp-dialog').length > 0) { 
 			Pltgh();$('#pp-dialog p').html(msg);$('#pp-dialog #pp-nf').text($.cookie('NF'));$.cookie('NF','');$('#pp-dialog').toggle("slide", { direction: "up" }, 100);
 		} else {			
-			$('body').before('<div  style="position: absolute; width: 300px; left: 50%; margin-left: -150px;"><form id="pp-dialog" style=" display:'+Cdisplay+';z-index: 99999999;direction: ltr; border: 4px solid #333;box-shadow: 0 -1px 6px -1px #262626;border-radius: 3px 3px 3px 3px;padding: 5px;position: relative;top: 15px; width: 300px; background: #5ECEFE;height: 138px;"><p style="color: #fff;text-shadow: 0 0 5px #434343;margin: 0px;padding-right: 60px; padding-left: 7px;">'+msg+'</p><input name="url" value="/" style="width: auto; padding: 3px; position: absolute; left: 10px; top: 50px;width: 228px; margin-top: 10px; box-shadow: 0px 0px 2px inset; border: 2px solid rgb(51, 51, 51);"><span id="pp-jpg-r" style="position: absolute; right: 10px; top: 52px;"><input type="radio" value="pp-bg.jpg" name="imgExt">.jpg <br><input type="radio" value="pp-bg.png" name="imgExt">.png</span><span id="pp-close"style="position: absolute; top: 0px; right: 7px; font-size: 22px; font-weight: bold; text-shadow: 0px 0px 5px; color: rgb(34, 34, 34); cursor: pointer;"> &times;</span><span id="pp-nf"style="position: absolute; bottom: 10px; overflow: hidden; left: 0px; padding-left: 10px; width: 290px; white-space: nowrap; font-size: 15px;">'+$.cookie('NF')+'</span></form></div>');
+			$('body').before('<div  style="position: absolute; width: 300px; left: 50%; margin-left: -150px;"><form id="pp-dialog" style=" display:block;z-index: 99999999;direction: ltr; border: 4px solid #333;box-shadow: 0 -1px 6px -1px #262626;border-radius: 3px 3px 3px 3px;padding: 5px;position: relative;top: 15px; width: 300px; background: #5ECEFE;height: 138px;"><p style="color: #fff;text-shadow: 0 0 5px #434343;margin: 0px;padding-right: 60px; padding-left: 7px;">'+msg+'</p><input name="url" value="/" style="width: auto; padding: 3px; position: absolute; left: 10px; top: 50px;width: 228px; margin-top: 10px; box-shadow: 0px 0px 2px #000 inset !important; border: 2px solid rgb(51, 51, 51) !important;"><span id="pp-jpg-r" style="position: absolute; right: 10px; top: 52px;"><input type="radio" value="pp-bg.jpg" name="imgExt">.jpg <br><input type="radio" value="pp-bg.png" name="imgExt">.png</span><span id="pp-close"style="position: absolute; top: 0px; right: 7px; font-size: 22px; font-weight: bold; text-shadow: 0px 0px 5px; color: rgb(34, 34, 34); cursor: pointer;"> &times;</span><span id="pp-nf"style="position: absolute; bottom: 10px; overflow: hidden; left: 0px; padding-left: 10px; width: 290px; white-space: nowrap; font-size: 15px;">'+$.cookie('NF')+'</span></form></div>');
 			$.cookie('NF','');$('#pp-close').click(function() {ppDialog(msg);});
 			Pltgh();
 			$('#pp-dialog input').focus(function() {if($(this).val() === '/') {$(this).val('')}});$('#pp-dialog input').blur(function() {if($(this).val() === '') {$(this).val('/')}});
@@ -49,13 +49,13 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 				$.cookie('Cpatch', url);			
 			}});
 		} else {
-			$('body').before('<div class="pp-bg" style="opacity:'+Copacity+';height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:'+Cdisplay+';"><div style="text-align: center;"><img style="position:relative; z-index: 99999999; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'"></div></div>');
-			$('.pp-bg').fadeOut(1);$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
+			$('body').before('<div class="pp-bg" style="opacity:0;height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:'+Cdisplay+';"><div style="text-align: center;"><img style="position:relative; z-index: 99999999; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'"></div></div>');
+			$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
 			$('.pp-bg img').load(url, function(response, status, xhr) {
 			if (status == "error") {
 				$.cookie('NF',url);ppDialog(msgE);
 			} else {
-				Pltgh();Pdtgh();$('.pp-bg').fadeIn(400);$.cookie('Cpatch', url);
+				Pltgh();Pdtgh();$('.pp-bg').animate({opacity: Copacity,},100);$.cookie('Cpatch', url);
 			}});}		
 	}
 	function toggleLayot(l){
