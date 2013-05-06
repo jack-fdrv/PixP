@@ -36,7 +36,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 			function Psumbit() {var input = $('#pp-dialog input').val();if(input.match(/\.jpg$|\.png$/)) {imgCheck(input,0);} else {var Radio = $('input[name=imgExt]');var imgName = Radio.filter(':checked').val();if(input.match(/\/$/)){var Cpatch=input+imgName;}else{var Cpatch = input+'/'+imgName;}imgCheck(Cpatch,0);}}
 		}		
 	}
-	function ppDialogL(l) {var msg ='Layot '+l+' not exists.';ppDialog(msg);Pltgh();}
+	function ppDialogL(l) {var msg ='Layot '+l+' not exists.';ppDialog(msg);}
 	function imgCheck(url,l) {
 		Pltgs();Pdtgh();
 		if ($('.pp-bg').length > 0) {	
@@ -49,13 +49,14 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 				$.cookie('Cpatch', url);			
 			}});
 		} else {
-			$('body').before('<div class="pp-bg" style="opacity:0;height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:'+Cdisplay+';"><div style="text-align: center;"><img style="position:relative; z-index: 99999999; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'"></div></div>');
+			$('body').before('<div class="pp-bg" style="opacity:'+Copacity+';height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:none;"><div style="text-align: center;"><img style="position:relative; z-index: 99999999; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'"></img></div></div>');
 			$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
+			$('html').mouseenter(function(){if($.cookie('hover') == 1) {$('.pp-bg').hide();}}).mouseleave(function(){if($.cookie('hover') == 1) {$('.pp-bg').show();}});
 			$('.pp-bg img').load(url, function(response, status, xhr) {
 			if (status == "error") {
 				$.cookie('NF',url);ppDialog(msgE);
 			} else {
-				Pltgh();Pdtgh();$('.pp-bg').animate({opacity: Copacity,},400);$.cookie('Cpatch', url);
+				Pltgh();Pdtgh();$.cookie('Cpatch', url); if(Cdisplay=='block') {$('.pp-bg').fadeIn(400);}
 			}});}		
 	}
 	function toggleLayot(l){
@@ -86,6 +87,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 	shortcut.add("Alt+9",function() {toggleLayot(9);return false;});
 	shortcut.add("Alt+X",function() {toggleLayot('');return false;});
 	shortcut.add("Alt+Z",function() {$('.pp-bg').toggleClass('pp-hidden'); $('.pp-bg').css('overflow','hidden');$('.pp-hidden').css('overflow','visible');return false;});
+	shortcut.add("Alt+C",function() {if($.cookie('hover') == 0) {$.cookie('hover', 1);if($.cookie('display') =='block') {$('.pp-bg').hide();}} else {$.cookie('hover',0); if($.cookie('display') =='block') {$('.pp-bg').show();}}; return false;});
 	shortcut.add("Alt+Q",function() {$('.pp-bg').toggle();if($('.pp-bg').is(":visible")) {$.cookie('display', 'block')} else {$.cookie('display', 'none')};return false;});	
 	shortcut.add("Alt+W",function() {if($('.pp-bg').css('opacity') < 1) {$.cookie('PreOpacity', $('.pp-bg').css('opacity'));$('.pp-bg').fadeTo(1, 1);$.cookie('opacity', 1);} else {$('.pp-bg').fadeTo(1, $.cookie('PreOpacity'));$.cookie('opacity', $.cookie('PreOpacity'));}Copacity = $.cookie('opacity');return false;});	
 	shortcut.add("Alt+E",function() {$('.pp-bg').animate({opacity: '+=0.1',},1, function() {$.cookie('opacity', $(".pp-bg").css("opacity"));Copacity = $.cookie('opacity');});return false;});
