@@ -55,7 +55,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 			if (status == "error") {
 				$.cookie('NF',url);ppDialog(msgE);
 			} else {
-				Pltgh();Pdtgh();$('.pp-bg').animate({opacity: Copacity,},100);$.cookie('Cpatch', url);
+				Pltgh();Pdtgh();$('.pp-bg').animate({opacity: Copacity,},400);$.cookie('Cpatch', url);
 			}});}		
 	}
 	function toggleLayot(l){
