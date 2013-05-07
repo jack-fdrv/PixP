@@ -14,7 +14,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 	if ($.cookie('pp-opacity')) {var Copacity = $.cookie('pp-opacity');} else {var Copacity = 0.4;}	
 	$.cookie('NF','');
 	if (!$.cookie('PreOpacity')) {$.cookie('PreOpacity',0.4)}	
-	if(!$.cookie('pp-hover') {$.cookie('pp-hover',0);}
+	if(!$.cookie('pp-hover')) {$.cookie('pp-hover',0);}
 	var dh = $(document).height();
 	var msg="Please type the url or patch where u store 'pp-bg.jpg/png'";
 	var msgE="I cant found pp-bg,please select new patch or url.";
