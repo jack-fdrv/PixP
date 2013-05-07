@@ -44,19 +44,16 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 			success: function(){ 
 				$(".pp-bg").hide("slide", { direction: "left" }, 300);
 				$(".pp-bg img").attr("src", url);
-				$('.pp-bg img').load(function() {$('#pp-load').hide();$('.pp-bg').show("slide", { direction: "right" }, 300);});
+				$('.pp-bg img').load(function() {Pltgh();$('.pp-bg').show("slide", { direction: "right" }, 300);});
 				$.cookie('Cpatch', url);			
 			}});
 		} else {
 			$('body').before('<div class="pp-bg" style="height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:none;"><div style="text-align: center;"><img style="position:relative; z-index: 99999999;opacity:'+Copacity+'; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'" /></div></div><span id="pp-hover-mode" style="display:block;font-weight: bold; left: 10px; z-index: 999999999; top: 10px; border-radius: 5px; position: fixed; color: #00FF00; text-shadow: 0px 0px 2px; border: 3px solid rgb(71, 183, 231); padding: 7px; box-shadow: 0px 3px 30px rgb(17, 17, 17) inset, 0px 0px 5px rgb(94, 206, 254);width: 120px;text-align: center;">Hover mode</span>');
 			$('#pp-hover-mode').hide();$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
 			$('html').mouseenter(function(){if($.cookie('hover') == 1) {$('.pp-bg').hide();}}).mouseleave(function(){if($.cookie('hover') == 1) {$('.pp-bg').show();}});
-			$('.pp-bg img').load(url, function(response, status, xhr) {
-			if (status == "error") {
-				$.cookie('NF',url);ppDialog(msgE);
-			} else {
-				Pltgh();Pdtgh();$.cookie('Cpatch', url); if(Cdisplay=='block') {$('.pp-bg').fadeIn(400);}
-			}});}		
+			$('.pp-bg img').error(function() {$.cookie('NF',url);ppDialog(msgE);});
+			$('.pp-bg img').load(function() {Pltgh();Pdtgh();$.cookie('Cpatch', url); if(Cdisplay=='block') {$('.pp-bg').fadeIn(400);}
+			});}		
 	}
 	function toggleLayot(l){
 		Cpatch = $.cookie('Cpatch');
