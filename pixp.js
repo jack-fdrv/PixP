@@ -52,7 +52,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 			$('#pp-hover-mode').hide();$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('top', $(".pp-bg img").css("top"));$.cookie('left', $(".pp-bg img").css("left"));}});
 			$('html').mouseenter(function(){if($.cookie('hover') == 1) {$('.pp-bg').hide();}}).mouseleave(function(){if($.cookie('hover') == 1) {$('.pp-bg').show();}});
 			$('.pp-bg img').error(function() {$.cookie('NF',url);ppDialog(msgE);});
-			$('.pp-bg img').load(function() {Pltgh();Pdtgh();$.cookie('Cpatch', url); if(Cdisplay=='block') {$('.pp-bg').fadeIn(400);}
+			$('.pp-bg img').load(function() {alert('done');Pltgh();Pdtgh();$.cookie('Cpatch', url); if(Cdisplay=='block') {$('.pp-bg').fadeIn(400);}
 			});}		
 	}
 	function toggleLayot(l){
