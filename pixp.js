@@ -1,8 +1,7 @@
-//Version 1.03
+//Version 1.04
 var jqueryIs = function waitJQ() {
     if (typeof jQuery != "undefined") {
 (function($){
-$.noConflict();
 $(function() {
 $('body').before('<div id="pp-load" style="opacity:0.7;z-index: 9999999; width:100%; position: absolute; top:0; left:0; display:block;"><div style="text-align: center;"><img src="https://raw.github.com/jek-fdrv/PixP/master/ajax-loader.gif"></div></div>');
 (function (factory) {if (typeof define === 'function' && define.amd) {define(['jquery'], factory);} else {factory(jQuery);}}(function ($) {var pluses = /\+/g;function raw(s) {return s;}function decoded(s) {return decodeURIComponent(s.replace(pluses, ' '));}function converted(s) {if (s.indexOf('"') === 0) {s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');}try {return config.json ? JSON.parse(s) : s;} catch(er) {}}var config = $.cookie = function (key, value, options) {if (value !== undefined) {options = $.extend({}, config.defaults, options);if (typeof options.expires === 'number') {var days = options.expires, t = options.expires = new Date();t.setDate(t.getDate() + days);}value = config.json ? JSON.stringify(value) : String(value);return (document.cookie = [config.raw ? key : encodeURIComponent(key),'=',config.raw ? value : encodeURIComponent(value),options.expires ? '; expires=' + options.expires.toUTCString() : '', options.path    ? '; path=' + options.path : '',options.domain  ? '; domain=' + options.domain : '',options.secure  ? '; secure' : ''].join(''));}var decode = config.raw ? raw : decoded;var cookies = document.cookie.split('; ');var result = key ? undefined : {};for (var i = 0, l = cookies.length; i < l; i++) {var parts = cookies[i].split('=');var name = decode(parts.shift());var cookie = decode(parts.join('='));if (key && key === name) {result = converted(cookie);break;}if (!key) {result[name] = converted(cookie);}}return result;};config.defaults = {};$.removeCookie = function (key, options) {if ($.cookie(key) !== undefined) {$.cookie(key, '', $.extend({}, options, { expires: -1 }));return true;}return false;};}));
@@ -46,13 +45,14 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 				$(".pp-bg").hide("slide", { direction: "left" }, 300);
 				$(".pp-bg img").attr("src", url);
 				$('.pp-bg img').load(function() {Pltgh();$('.pp-bg').show("slide", { direction: "right" }, 300);});
+				console.info(url);
 				$.cookie('Cpatch', url);			
 			}});
-		} else {
+		} else {		
 			$('body').before('<div class="pp-bg" style="height:'+dh+'px;overflow: hidden; width:100%; z-index: 9999999; position: absolute; top:0; left:0; display:none;"><div style="text-align: center;"><img style="position:relative; z-index: 99999999;opacity:'+Copacity+'; top:'+Ctop+'; left:'+Cleft+';" src="'+ url +'" /></div></div><span id="pp-hover-mode" style="display:block;font-weight: bold; left: 10px; z-index: 999999999; top: 10px; border-radius: 5px; position: fixed; color: #00FF00; text-shadow: 0px 0px 2px; border: 3px solid rgb(71, 183, 231); padding: 7px; box-shadow: 0px 3px 30px rgb(17, 17, 17) inset, 0px 0px 5px rgb(94, 206, 254);width: 120px;text-align: center;">Hover mode</span>');
 			$('#pp-hover-mode').hide();$('.pp-bg img').draggable({stop: function( event, ui ) {$.cookie('pp-top', $(".pp-bg img").css("top"));$.cookie('pp-left', $(".pp-bg img").css("left"));}});
 			$('html').mouseenter(function(){if($.cookie('pp-hover') == 1) {$('.pp-bg').hide();}}).mouseleave(function(){if($.cookie('pp-hover') == 1) {$('.pp-bg').show();}});
-			$('.pp-bg img').one('load', function() {Pltgh();Pdtgh();$.cookie('Cpatch', url); if(Cdisplay=='block') {$('.pp-bg').fadeIn(400).unbind();}});
+			$('.pp-bg img').one('load', function() {Pltgh();Pdtgh();$.cookie('Cpatch', url); if(Cdisplay==='block') {$('.pp-bg').fadeIn(400).unbind();};$(this).unbind();});
 			$('.pp-bg img').error(function() {$.cookie('NF',url);ppDialog(msgE);});
 			}
 					
@@ -100,7 +100,7 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
 })(jQuery);
     } else {
 		var script = document.createElement('script');
-		script.src = '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js';
+		script.src = 'http://http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js';
 		script.type = 'text/javascript';
 		document.getElementsByTagName('head')[0].appendChild(script);
         window.setTimeout(waitJQ, 1000);
