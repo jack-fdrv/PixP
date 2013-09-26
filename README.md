@@ -1,7 +1,7 @@
 PixP
 ====
 
-####Pixel perfect script for create the html pages.####
+####Pixel perfect script for easy create the html pages from PSD layout.####
 See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 
 
