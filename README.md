@@ -9,9 +9,9 @@ See all info here.
 ##If site not work here the git version of info.##
 
 <pre><code>\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script></pre></code>
-1. Click and copy the code, then put in tags '\<head>' or before '\</body>' on your site.<br>
-2. Load your 'pp-bg.jpg'/png in any domain foldes. Example: '/images/'<br>
-3. Select folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg <br>
+<code>1</code> **Click and copy the code, then put in tags '\<head>' or before '\</body>' on your site.**<br>
+<code>2</code> **Load your 'pp-bg.jpg'/png in any domain foldes. Example: '/images/'**<br>
+<code>3</code> **Select folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg** <br>
 *If u dont see dialog window - press: Shift + E.*
 
 >##  Short cuts:
