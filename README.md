@@ -2,9 +2,9 @@ PixP
 ====
 
 ####Pixel perfect script for create the html pages.####
-See all info here.
+See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 
-**http://jek-fdrv.16mb.com/pixp**
+
 
 ##If site not work here the git version of info.##
 
