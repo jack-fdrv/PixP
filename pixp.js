@@ -106,5 +106,5 @@ shortcut = {'all_shortcuts':{},'add': function(shortcut_combination,callback,opt
         window.setTimeout(waitJQ, 1000);
     }
 };
-jqueryIs();
+jqueryIs(); 
  
