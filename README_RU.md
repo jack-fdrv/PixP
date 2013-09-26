@@ -12,37 +12,37 @@ PixP
 <code>3</code> **Укажите имя папки и расширение картинки в диалоговом окне. Пример: '/wp-content/themes/any/images/' - .jpg** <br>
 *Если вы не видите диалоговое окно нажмите: <code> Shift + E.</code>*
 
->##  Short cuts:
+>##  Горячие клавиши:
 <ul>
-<li><code>Alt + Q</code> switch show/hide.</li>
-<li><code>Alt + W</code> switch transparency.</li>
-<li><code>Alt + E</code> + transparency.</li>
-<li><code>lt + D</code> - transparency.</li>
+<li><code>Alt + Q</code> Показать,спрятать.</li>
+<li><code>Alt + W</code> Переключатель прозрачности.</li>
+<li><code>Alt + E</code> + прозрачность.</li>
+<li><code>lt + D</code> - прозрачность.</li>
 </ul>
 
->>### More short cuts:
+>>### Еще клавиши:
 <ul>
-<li><code>Druging</code> Click, hold and move.</li>
-<li><code>Shift + Q</code> Default position. </li>
-<li><code>Shift + W/A/S/D</code> Sensitive position preference.</li>
-<li><code>Shift + E</code> Toggle dialog.</li>
-<li><code>Alt + C</code> Switch 'Hover mode'.</li>
+<li><code>Druging</code> Кликаем,держим и двивагем.</li>
+<li><code>Shift + Q</code> Стандартное позицианирование.</li>
+<li><code>Shift + W/A/S/D</code> Чувствительная настройка позиции.</li>
+<li><code>Shift + E</code> Переключатель диалогового окна.</li>
+<li><code>Alt + C</code> Переключатель 'Hover mode'.</li>
 </ul>
 
->>>#### Layouts:
+>>>#### Больше макетов:
 <ul>
-<li><code>Alt + 1-9</code> Upload ur images and name pp-bg1.jpg, pp-bg9.jpg... Now u can switch them.</li>
-<li><code>Alt + X</code> Show default image - pp-bg.jpg/png.</li>
-<li><code>Alt + Z</code> For toggle overflow.</li>
+<li><code>Alt + 1-9</code> Назовите ваши изображения pp-bg1.jpg, pp-bg9.jpg... Теперь вы можете переключиться на них.</li>
+<li><code>Alt + X</code> Показать первоначальное изображение - pp-bg.jpg/png.</li>
+<li><code>Alt + Z</code> Переключатель overflow.</li>
 </ul>
 
 ###Hints:###
 <table>
     <tr>
-If u have pp-bg.jpg u must use pp-bg1.jpg (same extension). U cant use .png if ur defaul img is pp-bg.jpg. <br />
-U can type url of image, but if it not named 'pp-bg' u cant use layouts.<br />
-Script use cookie, so if you reload page you will see all settings have been saved.<br />
-Hover mode - when you use inspect mode script will hide the image while you are working with Elements.<br />
-If you see cropped image press: Alt + Z<br />
+Если ваша картинка имеет расширение .jpg макеты должны иметь такое же разширение. <br />
+Если вы используете прямую ссылку к изображению имя котой не 'pp-bg' вы не можете использользовать макеты.<br />
+Скрипт запоминает ваши действия, перезагрузка страницы не собьет настройки..<br />
+Hover mode - при инспектировании елементов скрипт прячет картинку на время работы с елементами.<br />
+Если вы видите обрезанное изображение нажмите:<code> Alt + Z</code><br />
  </tr>
 </table>
