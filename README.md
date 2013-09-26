@@ -45,6 +45,6 @@ If u have pp-bg.jpg u must use pp-bg1.jpg (same extension). U cant use .png if u
 U can type url of image, but if it not named 'pp-bg' u cant use layouts.<br />
 Script use cookie, so if you reload page you will see all settings have been saved.<br />
 Hover mode - when you use inspect mode script will hide the image while you are working with Elements.<br />
-If you see cropped image press: Alt + Z<br />
+If you see cropped image press: <code>Alt + Z</code><br />
  </tr>
 </table>
