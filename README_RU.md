@@ -6,7 +6,7 @@ PixP
 
 ##Если сайт не работает, смотрите git версию ниже.##
 
-<pre><code>\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script></code></pre>
+<pre>\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script></pre> <br>
 <code>1</code> **копируем затем помещаем в теги '&lt;head&gt;' или перед '&lt;/body&gt;' на вашем сайте.**<br>
 <code>2</code> **Загрузите ваше изображение с именем 'pp-bg.jpg'/png в любую доменную папку. Например: '/images/'**<br>
 <code>3</code> **Укажите имя папки и расширение картинки в диалоговом окне. Пример: '/wp-content/themes/any/images/' - .jpg** <br>
