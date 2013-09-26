@@ -23,7 +23,7 @@ Alt + D - transparency.
 
 More short cuts
 Druging Click, hold and move.
-Shift + Q Default position.
+Shift + Q Default position. 
 Shift + W/A/S/D Sensitive position preference.
 Shift + E Toggle dialog.
 Alt + C Switch 'Hover mode'.
