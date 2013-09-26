@@ -9,7 +9,7 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 ##If site not work here the git version of info.##
 
 <pre>\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script></pre>
-<code>1</code> **Сopy the code, then put in tags '\<head>' or before '\</body>' on your site.**<br>
+<code>1</code> **Сopy the code and then put in tags '\<head>' or before '\</body>' on your site.**<br>
 <code>2</code> **Load your 'pp-bg.jpg'/png in any domain foldes. Example: '/images/'**<br>
 <code>3</code> **Select folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg** <br>
 *If u dont see dialog window - press: <code>Shift + E.</code>*
