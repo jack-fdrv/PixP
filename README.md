@@ -31,7 +31,7 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 <li><code>Alt + C</code> Switch 'Hover mode'.</li>
 </ul>
 
->>>#### Layouts:
+>>>#### More layouts:
 <ul>
 <li><code>Alt + 1-9</code> Upload ur images and name pp-bg1.jpg, pp-bg9.jpg... Now u can switch them.</li>
 <li><code>Alt + X</code> Show default image - pp-bg.jpg/png.</li>
