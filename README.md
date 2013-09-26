@@ -15,7 +15,7 @@ if site not work here the text version of info.
 3. 3. Select folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg
 If u dont see dialog window - press: Shift + E
 
-Short cuts:
+Short cuts: 
 Alt + Q switch show/hide.
 Alt + W switch transparency.
 Alt + E + transparency.
