@@ -6,37 +6,36 @@ See all info here.
 
 **http://jek-fdrv.16mb.com/pixp**
 
-##if site not work here the text version of info.##
+##If site not work here the git version of info.##
 
-\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script>
-   
-1. Click and copy the code, then put in tags '<head>' or before '</body>' on your site.
-2. 2. Load your 'pp-bg.jpg'/png in any domain foldes. Example: '/images/'
-3. 3. Select folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg
-If u dont see dialog window - press: Shift + E
+<pre><code>\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script></pre></code>
+1. Click and copy the code, then put in tags '\<head>' or before '\</body>' on your site.<br>
+2. Load your 'pp-bg.jpg'/png in any domain foldes. Example: '/images/'<br>
+3. Select folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg <br>
+*If u dont see dialog window - press: Shift + E.*
 
 >##  Short cuts:
 <ul>
-<li>Alt + Q switch show/hide.</li>
-<li>Alt + W switch transparency.</li>
-<li>Alt + E + transparency.</li>
-<li>Alt + D - transparency.</li>
+<li><code>Alt + Q</code> switch show/hide.</li>
+<li><code>Alt + W</code> switch transparency.</li>
+<li><code>Alt + E</code> + transparency.</li>
+<li><code>lt + D</code> - transparency.</li>
 </ul>
 
 >>### More short cuts:
 <ul>
-<li>Druging Click, hold and move.</li>
-<li>Shift + Q Default position. </li>
-<li>Shift + W/A/S/D Sensitive position preference.</li>
-<li>Shift + E Toggle dialog.</li>
-<li>Alt + C Switch 'Hover mode'.</li>
+<li><code>Druging</code> Click, hold and move.</li>
+<li><code>Shift + Q</code> Default position. </li>
+<li><code>Shift + W/A/S/D</code> Sensitive position preference.</li>
+<li><code>Shift + E</code> Toggle dialog.</li>
+<li><code>Alt + C</code> Switch 'Hover mode'.</li>
 </ul>
 
 >>>#### Layouts:
 <ul>
-<li>Alt + 1-9 Upload ur images and name pp-bg1.jpg, pp-bg9.jpg... Now u can switch them.</li>
-<li>Alt + X Show default image - pp-bg.jpg/png.</li>
-<li>Alt + Z For toggle overflow.</li>
+<li><code>Alt + 1-9</code> Upload ur images and name pp-bg1.jpg, pp-bg9.jpg... Now u can switch them.</li>
+<li><code>Alt + X</code> Show default image - pp-bg.jpg/png.</li>
+<li><code>Alt + Z</code> For toggle overflow.</li>
 </ul>
 
 ###Hints:###
