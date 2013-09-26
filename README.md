@@ -24,7 +24,7 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 
 >>### More short cuts:
 <ul>
-<li><code>Druging</code> Click, hold and move.</li>
+<li><code>Drag'n'Drop</code> Click, hold and move.</li>
 <li><code>Shift + Q</code> Default position. </li>
 <li><code>Shift + W/A/S/D</code> Sensitive position preference.</li>
 <li><code>Shift + E</code> Toggle dialog.</li>
