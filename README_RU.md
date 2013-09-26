@@ -22,7 +22,7 @@ PixP
 
 >>### Еще клавиши:
 <ul>
-<li><code>Druging</code> Кликаем,держим и двивагем.</li>
+<li><code>Drag'n'Drop</code> Кликаем,держим и двивагем.</li>
 <li><code>Shift + Q</code> Стандартное позицианирование.</li>
 <li><code>Shift + W/A/S/D</code> Чувствительная настройка позиции.</li>
 <li><code>Shift + E</code> Переключатель диалогового окна.</li>
