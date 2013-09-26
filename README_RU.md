@@ -1,7 +1,6 @@
-<code><d href="https://github.com/jek-fdrv/PixP/blob/master/README_RU.md">Eng version</a></code>
 PixP
 ====
-
+<code><a href="https://github.com/jek-fdrv/PixP/blob/master/README_RU.md">Eng version</a></code>
 ####Pixel perfect скрипт для создания HTML страниц по макету.####
 Смотрите всю информацию **<a href="http://jek-fdrv.16mb.com/pixp">здесь</a>**.
 
