@@ -4,7 +4,7 @@ PixP
 ####Pixel perfect скрипт для создания HTML страниц по макету.####
 Смотрите всю информацию **<a href="http://jek-fdrv.16mb.com/pixp">здесь</a>**.
 
-##If site not work here the git version of info.##
+##Если сайт не работает, смотрите git версию ниже.##
 
 <pre><code>\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script></code></pre>
 <code>1</code> **копируем затем помещаем в теги '&lt;head&gt;' или перед '&lt;/body&gt;' на вашем сайте.**<br>
