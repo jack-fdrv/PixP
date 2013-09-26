@@ -1,3 +1,4 @@
+<code><d href="https://github.com/jek-fdrv/PixP/blob/master/README_RU.md">Eng version</a></code>
 PixP
 ====
 
