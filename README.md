@@ -12,7 +12,7 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 <code>1</code> **Сopy the code and then put in tags '\<head>' or before '\</body>' in your site.**<br>
 <code>2</code> **Load your 'pp-bg.jpg'/png in any domain folder. Example: '/images/'**<br>
 <code>3</code> **Select that folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg** <br>
-*If u dont see dialog window - press: <code>Shift + E.</code>*
+*If you dont see dialog window - press: <code>Shift + E.</code>*
 
 >##  Shortcuts:
 <ul>
@@ -33,7 +33,7 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 
 >>>#### More layouts:
 <ul>
-<li><code>Alt + 1-9</code> Upload ur images and name pp-bg1.jpg, pp-bg9.jpg... Now u can switch them.</li>
+<li><code>Alt + 1-9</code> Upload your images and name pp-bg1.jpg, pp-bg9.jpg... Now you can switch them.</li>
 <li><code>Alt + X</code> Show default image - pp-bg.jpg/png.</li>
 <li><code>Alt + Z</code> For toggle overflow.</li>
 </ul>
@@ -41,10 +41,10 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 ###Hints:###
 <table>
     <tr>
-If u have pp-bg.jpg u must use pp-bg1.jpg (same extension). U cant use .png if ur default img is pp-bg.jpg. <br />
-U can type url of image, but if it not named 'pp-bg' u cant use layouts.<br />
+If you have pp-bg.jpg u must use pp-bg1.jpg (same extension). U cant use .png if ur default img is pp-bg.jpg. <br />
+You can type url of image, but if it not named 'pp-bg' you cant use layouts.<br />
 Script use cookie, so if you reload page you will see all settings have been saved.<br />
-Hover mode - when you use inspect mode script will hide the image while you are working with Elements.<br />
+Hover mode - when you use inspect mode script will hide the image while you are working with elements.<br />
 If you see cropped image press: <code>Alt + Z</code><br />
  </tr>
 </table>
