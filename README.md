@@ -9,12 +9,12 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 ##If site not work here the git version of info.##
 
 <pre>\<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript">\</script></pre> <br>
-<code>1</code> **Сopy the code and then put in tags '\<head>' or before '\</body>' on your site.**<br>
-<code>2</code> **Load your 'pp-bg.jpg'/png in any domain foldes. Example: '/images/'**<br>
-<code>3</code> **Select folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg** <br>
+<code>1</code> **Сopy the code and then put in tags '\<head>' or before '\</body>' in your site.**<br>
+<code>2</code> **Load your 'pp-bg.jpg'/png in any domain folder. Example: '/images/'**<br>
+<code>3</code> **Select that folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg** <br>
 *If u dont see dialog window - press: <code>Shift + E.</code>*
 
->##  Short cuts:
+>##  Shortcuts:
 <ul>
 <li><code>Alt + Q</code> switch show/hide.</li>
 <li><code>Alt + W</code> switch transparency.</li>
@@ -22,7 +22,7 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 <li><code>lt + D</code> - transparency.</li>
 </ul>
 
->>### More short cuts:
+>>### More shortcuts:
 <ul>
 <li><code>Drag'n'Drop</code> Click, hold and move.</li>
 <li><code>Shift + Q</code> Default position. </li>
