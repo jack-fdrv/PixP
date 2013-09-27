@@ -41,7 +41,7 @@ See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
 ###Hints:###
 <table>
     <tr>
-If you have pp-bg.jpg u must use pp-bg1.jpg (same extension). U cant use .png if ur default img is pp-bg.jpg. <br />
+If you have pp-bg.jpg you must use pp-bg1.jpg (same extension). You cant use .png if your default image is pp-bg.jpg. <br />
 You can type url of image, but if it not named 'pp-bg' you cant use layouts.<br />
 Script use cookie, so if you reload page you will see all settings have been saved.<br />
 Hover mode - when you use inspect mode script will hide the image while you are working with elements.<br />
