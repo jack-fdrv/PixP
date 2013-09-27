@@ -22,8 +22,8 @@ PixP
 
 >>### Еще клавиши:
 <ul>
-<li><code>Drag'n'Drop</code> Кликаем,держим и двивагем.</li>
-<li><code>Shift + Q</code> Стандартное позицианирование.</li>
+<li><code>Drag'n'Drop</code> Кликаем,держим и двигаем.</li>
+<li><code>Shift + Q</code> Стандартное позиционирование.</li>
 <li><code>Shift + W/A/S/D</code> Чувствительная настройка позиции.</li>
 <li><code>Shift + E</code> Переключатель диалогового окна.</li>
 <li><code>Alt + C</code> Переключатель 'Hover mode'.</li>
