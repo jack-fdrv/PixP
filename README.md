@@ -2,7 +2,7 @@ PixP
 ====
 <code><a href="https://github.com/jek-fdrv/PixP/blob/master/README_RU.md">Ru version</a></code>
 ####Pixel perfect script for easy create the html pages from PSD layout.####
-See all info **<a href="http://jek-fdrv.16mb.com/pixp">here</a>**.
+See all info **<a href="http://pixp.fdrv.guru">here</a>**.
 
 
 
