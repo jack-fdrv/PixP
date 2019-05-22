@@ -8,7 +8,7 @@ See all info **<a href="http://pixp.fdrv.guru">here</a>**.
 
 ##If site not work here the git version of info.##
 
-<pre>\<script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript">\</script></pre> <br>
+<pre><script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script></pre> <br>
 <code>1</code> **Сopy the code and then put in tags '\<head>' or before '\</body>' in your site.**<br>
 <code>2</code> **Load your 'pp-bg.jpg'/png in any domain folder. Example: '/images/'**<br>
 <code>3</code> **Select that folder name and extension in dialog. Example: '/wp-content/themes/any/images/' - .jpg** <br>
